@@ -5,6 +5,8 @@ import android.view.View;
 import android.widget.TextView;
 
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.uas_akb.R;
 import com.example.uas_akb.activities.model.WeatherList;
 
@@ -12,7 +14,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import pl.droidsonroids.gif.GifImageView;
 
-public class WeatherListHolder {
+public class WeatherListHolder extends RecyclerView.ViewHolder {
+
     @BindView(R.id.maxTempList)
     TextView maxTempList;
     @BindView(R.id.minTempList)
@@ -48,4 +51,5 @@ public class WeatherListHolder {
         }
 
     }
+
 }

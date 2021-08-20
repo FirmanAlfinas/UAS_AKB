@@ -1,6 +1,7 @@
 package com.example.uas_akb.activities.model;
 
 public class WeatherList {
+
     String time, status, statusDetail;
     double tempMax, tempMin;
 

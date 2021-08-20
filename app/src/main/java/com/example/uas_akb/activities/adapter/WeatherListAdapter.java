@@ -4,13 +4,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.uas_akb.R;
 import com.example.uas_akb.activities.holder.WeatherListHolder;
 import com.example.uas_akb.activities.model.WeatherList;
 
 import java.util.ArrayList;
 
-public class WeatherListAdapter {
+public class WeatherListAdapter extends RecyclerView.Adapter<WeatherListHolder> {
+
     private ArrayList<WeatherList> mWeatherlist;
 
     public WeatherListAdapter(ArrayList<WeatherList> mWeatherlist) {
@@ -32,8 +35,5 @@ public class WeatherListAdapter {
     @Override
     public int getItemCount() {
         return mWeatherlist.size();
-    }
-
-    public void notifyDataSetChanged() {
     }
 }

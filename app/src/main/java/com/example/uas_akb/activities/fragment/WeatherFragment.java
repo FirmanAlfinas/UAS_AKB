@@ -38,9 +38,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import pl.droidsonroids.gif.GifImageView;
 
-/**
- * Created by Azhar Rivaldi on 26-12-2019.
- */
 
 public class WeatherFragment extends Fragment {
 
