@@ -120,7 +120,7 @@
                 android:id="@+id/tvCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jakarta, ID"
+                android:text="Bandung, ID"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />

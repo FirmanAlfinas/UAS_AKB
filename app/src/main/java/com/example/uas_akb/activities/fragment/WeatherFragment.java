@@ -38,7 +38,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import pl.droidsonroids.gif.GifImageView;
 
-
 public class WeatherFragment extends Fragment {
 
     String API_URL = ApiWeather.API_URL;
@@ -110,7 +109,6 @@ public class WeatherFragment extends Fragment {
                     JSONObject weatherFirstObject = weatherArray.getJSONObject(0);
                     String status = weatherFirstObject.getString("main");
                     String date = firstObject.getString("dt_txt");
-                    /*String strIcon = firstObject.getString("icon");*/
 
                     tvCity.setText(city + ", " + country);
                     tvMaxTemp.setText(String.valueOf(intTempMax) + (char) 0x00B0 + "C");
@@ -125,14 +123,6 @@ public class WeatherFragment extends Fragment {
                         imgCuaca.setImageResource(R.drawable.cerah);
                     }
 
-                    /*if(!strIcon.equals(""))
-                    {
-                        String url="http://openweathermap.org/img/w/"+strIcon+".png";
-                        ImageView condIcon = getView().findViewById(R.id.imgCuaca);
-                        Glide.with(getActivity())
-                                .load(url)
-                                .into(condIcon);
-                    }*/
 
                     SimpleDateFormat formatDefault = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
                     SimpleDateFormat formatTimeCustom = new SimpleDateFormat("hh.mm");
